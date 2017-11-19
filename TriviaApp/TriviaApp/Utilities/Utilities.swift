@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
+import AVFoundation
 extension MutableCollection {
     /// Shuffles the contents of this collection.
     mutating func shuffle() {
@@ -51,6 +52,27 @@ extension UIApplication {
 
 class Utilities {
     
+    fileprivate var player: AVAudioPlayer!
+    
+    /** Play mp3 audio by name file without extension */
+    func playAudio(name: String) {
+        guard let url = Bundle.main.path(forResource: "\(name).mp3", ofType: nil) else { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setMode(AVAudioSessionModeDefault)
+            try AVAudioSession.sharedInstance().setActive(true)
+            let fileURL = URL(fileURLWithPath: url)
+            player = try AVAudioPlayer(contentsOf: fileURL)
+            player.isMeteringEnabled = true
+            player.volume = 1.0
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    /** Play wing color animations */
     func winxColorAnimation(view: UIView, colorOne: UIColor, colorTwo: UIColor, duration: TimeInterval) {
         UIView.animate(withDuration: duration, animations: {
             view.backgroundColor = colorOne

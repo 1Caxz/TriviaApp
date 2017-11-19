@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6F55D0151FC1D1EE00F457AD /* QuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F55D0141FC1D1EE00F457AD /* QuestionsPresenter.swift */; };
 		6F55D0171FC1FC7F00F457AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F55D0161FC1FC7F00F457AD /* ResultViewController.swift */; };
+		6F55D0291FC21CA900F457AD /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F55D0271FC21CA900F457AD /* wrong.mp3 */; };
+		6F55D02A1FC21CA900F457AD /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F55D0281FC21CA900F457AD /* correct.mp3 */; };
 		6FB90C1C1FC08269009A1C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB90C1B1FC08269009A1C14 /* AppDelegate.swift */; };
 		6FB90C1E1FC08269009A1C14 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB90C1D1FC08269009A1C14 /* HomeViewController.swift */; };
 		6FB90C211FC08269009A1C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB90C1F1FC08269009A1C14 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		6F55D0221FC1FD1A00F457AD /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		6F55D0231FC1FD1B00F457AD /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		6F55D0241FC1FD1C00F457AD /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		6F55D0271FC21CA900F457AD /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		6F55D0281FC21CA900F457AD /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
 		6FB90C181FC08269009A1C14 /* TriviaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB90C1B1FC08269009A1C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB90C1D1FC08269009A1C14 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		6F55D0251FC21C6100F457AD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6F55D0261FC21C8200F457AD /* Audio */,
+				6F55D0181FC1FD0500F457AD /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6F55D0261FC21C8200F457AD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6F55D0281FC21CA900F457AD /* correct.mp3 */,
+				6F55D0271FC21CA900F457AD /* wrong.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		6FB90C0F1FC08269009A1C14 = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +181,7 @@
 		6FB90C1A1FC08269009A1C14 /* TriviaApp */ = {
 			isa = PBXGroup;
 			children = (
-				6F55D0181FC1FD0500F457AD /* Fonts */,
+				6F55D0251FC21C6100F457AD /* Assets */,
 				6FB90C5E1FC1643E009A1C14 /* Managers */,
 				6FB90C531FC0938A009A1C14 /* Model */,
 				6FB90C511FC0851B009A1C14 /* ViewControllers */,
@@ -375,6 +397,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F55D02A1FC21CA900F457AD /* correct.mp3 in Resources */,
+				6F55D0291FC21CA900F457AD /* wrong.mp3 in Resources */,
 				6FB90C291FC08269009A1C14 /* LaunchScreen.storyboard in Resources */,
 				6FB90C261FC08269009A1C14 /* Assets.xcassets in Resources */,
 				6FB90C211FC08269009A1C14 /* Main.storyboard in Resources */,

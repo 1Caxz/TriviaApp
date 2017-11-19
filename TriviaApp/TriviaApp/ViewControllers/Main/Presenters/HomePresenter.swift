@@ -82,7 +82,6 @@ class HomePresenter: CardViewListDelegete {
         self.cardViewList.isClickable = true
         self.cardViewList.clickAnimation = .bounce
         self.cardViewList.isShadowEnable = false
-        self.cardViewList.shadowSize = 10
         if !isCreated && categories.count > 0 {
             self.isCreated = true
             self.cardViewList.generateCardViewList(containerView: contentView, viewControllers: cardViews, listType: .vertical, identifier: "Categories")

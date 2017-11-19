@@ -89,10 +89,12 @@ class QuestionsPresenter {
         cardViewEffect.bounce(view: view)
         setEnableButtons(isEnable: false)
         if button.tag == 1 {
+            self.util.playAudio(name: "correct")
             self.rightAnswers += 1
             button.backgroundColor = util.colorFromHex(hex: "#50e3c2")
             self.viewController.imgResponse.image = UIImage(named: "correct")
         } else {
+            self.util.playAudio(name: "wrong")
             self.wrongAnswers = (rightAnswers - 1) < 0 ? 0 : (rightAnswers - 1)
             button.backgroundColor = util.colorFromHex(hex: "#FB4040")
             self.viewController.imgResponse.image = UIImage(named: "wrong")
