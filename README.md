@@ -1,6 +1,10 @@
 # TriviaApp
 iOS mobile app with simple learning simulation with data from https://opentdb.com
 
+<p align="center">
+<img width="350" src="https://github.com/icaksama/TriviaApp/blob/master/TriviaAppPreview.gif?raw=true">
+</p>
+
 ## Features
 - [x] MVCP Architecture
 - [x] Locally cache data with coredata system
