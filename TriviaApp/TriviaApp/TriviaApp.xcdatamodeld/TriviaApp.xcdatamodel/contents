@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17B48" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categories" representedClassName="Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Questions" inverseName="category" inverseEntity="Questions" syncable="YES"/>
+    </entity>
+    <entity name="Questions" representedClassName="Questions" syncable="YES" codeGenerationType="class">
+        <attribute name="correct_answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="difficulty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="incorrect_answers" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Categories" inverseName="questions" inverseEntity="Categories" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-200" positionY="-9" width="128" height="88"/>
+        <element name="Questions" positionX="-18" positionY="-117" width="128" height="133"/>
+    </elements>
+</model>
