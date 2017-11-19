@@ -50,12 +50,16 @@ class QuestionsViewController: UIViewController {
         util.radiusCorner(views: btnA, btnB, btnC, btnD, radius: 20)
         util.borderView(views: btnA, btnB, btnC, btnD, borderWidth: 2, color: .black)
         btnA.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnA.isExclusiveTouch = true
         btnA.titleLabel?.textAlignment = .center
         btnB.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnB.isExclusiveTouch = true
         btnB.titleLabel?.textAlignment = .center
         btnC.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnC.isExclusiveTouch = true
         btnC.titleLabel?.textAlignment = .center
         btnD.titleLabel?.adjustsFontSizeToFitWidth = true
+        btnD.isExclusiveTouch = true
         btnD.titleLabel?.textAlignment = .center
         
         // Setting label

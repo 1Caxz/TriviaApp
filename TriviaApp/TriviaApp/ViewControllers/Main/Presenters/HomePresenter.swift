@@ -80,6 +80,7 @@ class HomePresenter: CardViewListDelegete {
         self.cardViewList.marginCards = 3
         self.cardViewList.maxHeight = 30
         self.cardViewList.isClickable = true
+        self.cardViewList.isMultipleTouch = false
         self.cardViewList.clickAnimation = .bounce
         self.cardViewList.isShadowEnable = false
         if !isCreated && categories.count > 0 {

@@ -73,7 +73,7 @@
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="CZS-uo-7kR"/>
                                             <barButtonItem style="plain" id="tqJ-7n-WwB">
                                                 <view key="customView" contentMode="scaleToFill" id="qiv-jP-ret">
-                                                    <rect key="frame" x="187" y="9.5" width="1" height="25"/>
+                                                    <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>

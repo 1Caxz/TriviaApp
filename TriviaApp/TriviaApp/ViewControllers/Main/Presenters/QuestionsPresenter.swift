@@ -49,6 +49,12 @@ class QuestionsPresenter {
             }
         }
         setEnableButtons(isEnable: true)
+        if questionCounter == (questions.count - 1) {
+            self.viewController.btnNext.setTitle("FINISH GAME", for: .normal)
+        } else {
+            self.viewController.btnNext.setTitle("NEXT", for: .normal)
+            
+        }
     }
     
     fileprivate func nextQuestion() {
@@ -102,7 +108,7 @@ class QuestionsPresenter {
                 if btn.tag == 1 {
                     let correctColor = util.colorFromHex(hex: "#50e3c2")
                     let normalColor = util.colorFromHex(hex: "#f4f4f4")
-                    util.winxColorAnimation(view: btn, colorOne: correctColor, colorTwo: normalColor, duration: 0.2)
+                    util.winxColorAnimation(view: btn, colorOne: correctColor, colorTwo: normalColor, duration: 0.1)
                 }
             }
         }
