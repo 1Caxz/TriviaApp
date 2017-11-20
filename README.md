@@ -16,13 +16,15 @@ iOS mobile app with simple learning simulation with data from https://opentdb.co
 
 ## Server Problem
 - [x] Any some categories error when amount more than 10.
+- [x] Any some categories absolutely cannot be accessed.
 - [x] The response data have HTML tag with default encoding.
 
 ## Assets Problem
 - [x] The assets on zeplin project support for Android, not iOS.
 
 ## Note
-Please try again if you failed to request data from the server. This is a server problem because of any some categories error when amount more than 10.
+Please try again if you failed to request Questions data for first time. This is a server problem because of any some categories error when amount more than 10. So, the app will request again with amount 10.<br>
+And there are any some categories absolutely cannot be accessed.
 
 ## MIT License
 
